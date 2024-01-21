@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Haseł</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generator Haseł</h1>
+        <div class="password-container">
+            <label for="quantity">Ilość haseł: <span id="quantityValue">10</span></label>
+            <input type="range" id="quantity" min="1" max="20" value="10" class="slider" oninput="updateQuantityValue()">
+            <label for="numSpecialChars">Ilość znaków specjalnych: <span id="numSpecialCharsValue">2</span></label>
+            <input type="range" id="numSpecialChars" min="0" max="5" value="2" class="slider" oninput="updateNumSpecialCharsValue()">
+            <label for="numNumbers">Ilość liczb: <span id="numNumbersValue">2</span></label>
+            <input type="range" id="numNumbers" min="0" max="5" value="2" class="slider" oninput="updateNumNumbersValue()">
+            <button onclick="generatePasswords()">Generuj hasła</button>
+            <textarea id="generatedPasswords" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
