@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generator Haseł</title>
+    <title>Generator Prostych Haseł</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Generator Haseł</h1><h5>by DS</h5>
+        <h1>🔒Generator Prostych Haseł</h1><h5>by DS</h5>
         
         <div class="password-container">
             <label for="quantity">Ilość haseł: <span id="quantityValue">5</span></label>
@@ -18,11 +19,10 @@
             <input type="range" id="numSpecialChars" min="0" max="5" value="2" class="slider" oninput="updateNumSpecialCharsValue()">
             <label for="numNumbers">Ilość liczb: <span id="numNumbersValue">2</span></label>
             <input type="range" id="numNumbers" min="0" max="5" value="2" class="slider" oninput="updateNumNumbersValue()">
-            <button onclick="generatePasswords()">Generuj hasła</button>
+            <button onclick="generatePasswords()"><b>Generuj hasła</b></button>
             <textarea id="generatedPasswords" readonly></textarea>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
