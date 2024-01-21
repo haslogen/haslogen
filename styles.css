@@ -22,6 +22,7 @@ body {
 
 .password-container {
     margin-top: 20px;
+    text-align: left; /* Dodajemy tekst na lewo dla okna z hasłami */
 }
 
 h1 {
@@ -45,14 +46,16 @@ span {
 }
 
 button {
-    padding: 10px;
+    padding: 15px;
     background-color: #4caf50;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 25px; /* Zaokrąglenie bardziej przycisków */
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
+    font-size: 16px; /* Mniejsza czcionka dla minimalistycznego wyglądu */
+    transition: background-color 0.3s;
 }
 
 button:hover {
